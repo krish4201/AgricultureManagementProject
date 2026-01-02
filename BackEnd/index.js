@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.use(cors({
-    origin: ["https://frontend-omega-nine-33.vercel.app"],
+    origin: ["http://localhost:5173"],
     methods: ["POST", "GET"],
     credentials: true
 }));
@@ -37,3 +37,5 @@ app.post("/update", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+// console.log(datas)
